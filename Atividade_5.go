@@ -118,4 +118,37 @@ func main() {
 	}
 }
 
-5º atividade: 
+5º atividade: (não terminada)
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+// Solicite ao usuário duas strings
+//e informe se elas são iguais ou diferentes.
+
+func main() {
+	var x int
+	scanner := bufio.NewScanner(os.Stdin) // Escaneamento da string
+
+	fmt.Print("Digite uma número: ")
+	fmt.Scan(&x)
+
+	scanner.Scan()
+	p := scanner.Text()
+
+	z, _ := strconv.ParseFloat(p, x)
+
+	if z == 0.1 {
+		fmt.Printf("O número %0.2f é um numero em float", z)
+	} else {
+		fmt.Printf("O numero %0.2f não é um número em float", z)
+	}
+
+}
+
