@@ -85,3 +85,37 @@ func main() {
 }
 
 4º Atividade:
+
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+
+// Solicite ao usuário duas strings
+//e informe se elas são iguais ou diferentes.
+
+func main() {
+
+	scanner := bufio.NewScanner(os.Stdin) // Escaneamento da string
+
+	x := bufio.NewScanner(os.Stdin)
+
+	fmt.Print("Digite uma palavra: ")
+	scanner.Scan()
+	p := scanner.Text()
+
+	fmt.Print("Digite outra palavra: ")
+	x.Scan()
+	v := x.Text()
+
+	if p == v {
+		fmt.Printf("As palavras %s e %s são iguais", p, v)
+	} else {
+		fmt.Printf("As palavras %s e %s são diferentes", p, v)
+	}
+}
+
+5º atividade: 
