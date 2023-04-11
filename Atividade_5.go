@@ -49,7 +49,7 @@ func main() {
 	fmt.Printf("A palavra que você digitou %s foi retirada os espaços, dando: %s", p, o)
 }
 
-3º Atividade:
+3º // 9º Atividade:
 
 package main
 
