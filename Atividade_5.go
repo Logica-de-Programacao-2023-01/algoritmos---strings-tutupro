@@ -133,7 +133,7 @@ import (
 //e informe se elas são iguais ou diferentes.
 
 func main() {
-	var x int
+	var x string
 	scanner := bufio.NewScanner(os.Stdin) // Escaneamento da string
 
 	fmt.Print("Digite uma número: ")
@@ -142,9 +142,9 @@ func main() {
 	scanner.Scan()
 	p := scanner.Text()
 
-	z, _ := strconv.ParseFloat(p, x)
+	z, err := strconv.ParseFloat(x, 64)
 
-	if z == 0.1 {
+	if err != nil {
 		fmt.Printf("O número %0.2f é um numero em float", z)
 	} else {
 		fmt.Printf("O numero %0.2f não é um número em float", z)
